@@ -29,7 +29,7 @@
                                 <Label x:Name="label" Text="{Binding BookName}" FontSize="21" FontAttributes="Bold"/>
                                 <Label Grid.Row="1" Text="{Binding BookDescription}" FontSize="15"/>
                             </Grid>
-                            <BoxView Grid.Row="1" IsVisible="{Binding .,Converter={StaticResource separatorVisibilityConverter}, ConverterParameter={x:Reference Name=listView}}" BackgroundColor="#93abd3" HeightRequest="1"/>
+                            <BoxView IsVisible="{Binding .,Converter={StaticResource separatorVisibilityConverter}, ConverterParameter={x:Reference Name=listView}}" BackgroundColor="#93abd3" HeightRequest="1"/>
                         </StackLayout>
                     </DataTemplate>
                 </syncfusion:SfListView.ItemTemplate>
